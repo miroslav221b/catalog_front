@@ -2,6 +2,7 @@
 import React from "react";
 import Map, {Source, Layer} from 'react-map-gl';
 import style from '../style/components/Map.module.scss'
+import Loader from "../UI/loader/Loader";
 const MapComponent = ({center}) => {
 
   const geojson = {
@@ -21,6 +22,7 @@ const MapComponent = ({center}) => {
   };
   
     return (
+      <Loader isLoading={!!center}>
       <div className={style.map}>
         <div className={style.title}>Choosed Home is here:</div>
         <Map
@@ -39,7 +41,7 @@ const MapComponent = ({center}) => {
 
         </div>
       </div>
-  
+    </Loader>
   )
 }
 export default MapComponent
