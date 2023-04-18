@@ -1,0 +1,24 @@
+.slide{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        height: 100%;
+        width: auto;
+        @media screen and (max-width: 1015px){
+            width: 900px;
+        }
+        @media screen and (max-width: 815px){
+            width: 700px;
+        }
+        @media screen and (max-width: 615px){
+            width: 500px;
+        }
+    }
+}
+.swiper{
+    height: 100%;
+    width: 100%;
+}
