@@ -33,9 +33,9 @@ const MapComponent = ({center}) => {
           latitude:center.latitude,
           zoom: 14
         }}>
-          <Source id="my-data" type="geojson" data={geojson}>
+          {/* <Source id="my-data" type="geojson" data={geojson}>
             <Layer {...layerStyle} />
-          </Source>
+          </Source> */}
         </Map>
         <div className={style.hideBar}>
 
