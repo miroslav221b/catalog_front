@@ -17,7 +17,8 @@ const Filters = ({ allOffers }) => {
                         optionList={[
                             { name: "All", value: "" },
                             { name: "House", value: "House" },
-                            { name: "Apartment", value: "Apartment" }]} />
+                            { name: "Apartment", value: "Apartment" },
+                            { name: "Сommercial premises", value:"Сommercial premises" }]} />
 
                     <Filter
                         name={"Type"}
@@ -25,7 +26,6 @@ const Filters = ({ allOffers }) => {
                         optionList={[
                             { name: "All", value: "" },
                             { name: "Rent", value: "Rent" },
-                            { name: "Сommercial premises", value:"Сommercial premises" },
                             { name: "Buy", value: "Buy" }]} />
                     <RefineSearch />
                     <ClearFiltersButton />
