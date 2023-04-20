@@ -7,7 +7,7 @@ import OfferInfo from "../components/OfferInfo";
 const Offer = () => {
     const location = useLocation()
     const offerId = location.pathname.split("/")[2]
-
+    console.log(location.pathname.split("/"))
     const dispatch = useDispatch()
 
     useEffect(() => {

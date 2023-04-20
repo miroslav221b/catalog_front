@@ -25,6 +25,7 @@ const Filters = ({ allOffers }) => {
                         optionList={[
                             { name: "All", value: "" },
                             { name: "Rent", value: "Rent" },
+                            { name: "Сommercial premises", value:"Сommercial premises" },
                             { name: "Buy", value: "Buy" }]} />
                     <RefineSearch />
                     <ClearFiltersButton />
