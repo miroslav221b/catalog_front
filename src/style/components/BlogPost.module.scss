@@ -1,0 +1,46 @@
+.post {
+  transition: 200ms;
+  min-height: 100px;
+  margin: 40px 0px;
+  padding-right: 20px;
+  scale: 1;
+
+  a {
+    display: flex;
+    gap: 40px;
+    img {
+      height: 200px;
+      width: 200px;
+      background-size: cover;
+    }
+
+    .info {
+      border-bottom: 1px solid #7b7b7b;
+      padding-bottom: 20px;
+      .title {
+        transition: 200ms;
+        color: #000000;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      p {
+        margin-top: 15px;
+        color: #7b7b7b;
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .date {
+        margin-top: 10px;
+      }
+    }
+  }
+  &:hover {
+    .title {
+      color: #ff0000;
+    }
+    .info {
+      border-bottom: 1px solid #ff0000;
+    }
+    scale: 1.01;
+  }
+}

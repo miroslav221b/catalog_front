@@ -1,0 +1,18 @@
+.container{
+    width: 1000px;
+    min-height: 100vh;
+    margin:0px auto;
+    padding-top:20px ;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: -10px -2px 41px -22px rgba(255, 0, 0, 0);
+    @media screen and (max-width: 1015px){
+        width: 800px;
+    }
+    @media screen and (max-width: 815px){
+        width: 600px;
+    }
+    @media screen and (max-width: 615px) {
+        height: 50px;
+        width: 400px;
+    }
+}
